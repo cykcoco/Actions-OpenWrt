@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: k2p+ssrp+应用过滤
 
 on:
   repository_dispatch:
