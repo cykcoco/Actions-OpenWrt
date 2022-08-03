@@ -16,6 +16,6 @@
 # Add a feed source
 echo 'src-git argon https://github.com/jerrykuku/openwrt-package' >>feeds.conf.default
 echo 'src-git oaf https://github.com/destan19/OpenAppFilter' >>feeds.conf.default
-echo 'src-git ssrplus https://github.com/fw876/helloworld.git' >>feeds.conf.default
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall.git' >>feeds.conf.default
-echo 'src-git vssr https://github.com/jerrykuku/luci-app-vssr.git' >>feeds.conf.default
+echo 'src-git ssrplus https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
