@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: k2p+ssrp
+name: k2p-ssrp
 
 on:
   repository_dispatch:
