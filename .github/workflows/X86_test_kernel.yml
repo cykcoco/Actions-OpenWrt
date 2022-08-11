@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: X86 test kernel
+name: X86 test kernel缓存加速版
 
 on:
   repository_dispatch:
