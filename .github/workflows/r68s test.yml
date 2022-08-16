@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: A OpenWrt for test
+name: R68s for test
 
 on:
   repository_dispatch:
@@ -23,9 +23,10 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: test.config
-  DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part2.sh
+  CONFIG_FILE: r68s/test.config
+  DIY_P1_SH: r68s/diy-part1.sh
+  DIY_P2_SH: r68s/diy-part2.sh
+  DIY_patch: r68s/0002-rockchip-add-FastRhino-R68S-support-in-kernel-5.19-9.patch
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
@@ -64,6 +65,7 @@ jobs:
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
+        [ -e $DIY_patch ] && mv $DIY_patch openwrt/0002-rockchip-add-FastRhino-R68S-support-in-kernel-5.19-9.patch
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
