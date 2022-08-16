@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: R68s for test
+name: R68s steady
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: r68s/test.config
+  CONFIG_FILE: r68s/r68s.config
   DIY_P1_SH: r68s/diy-part1.sh
   DIY_P2_SH: r68s/diy-part2.sh
   DIY_patch: r68s/0002-rockchip-add-FastRhino-R68S-support-in-kernel-5.19-9.patch
