@@ -12,3 +12,4 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+git apply 0002-rockchip-add-FastRhino-R68S-support-in-kernel-5.19-9.patch
