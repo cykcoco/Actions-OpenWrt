@@ -19,3 +19,4 @@ echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.de
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 echo 'src-git oaf https://github.com/destan19/OpenAppFilter' >>feeds.conf.default
 echo 'src-git alist https://github.com/sbwml/luci-app-alist' >>feeds.conf.default
+git apply 0002-rockchip-add-FastRhino-R68S-support-in-kernel-5.19-9.patch
