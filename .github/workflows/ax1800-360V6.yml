@@ -23,9 +23,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/openwrt-gl-ax1800
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/360V6.config
-  DIY_P1_SH: /ax1800-sh/diy-part1.sh
-  DIY_P2_SH: /ax1800-sh/diy-part2.sh
+  CONFIG_FILE: config/Ax1800/Ax1800-360V6.config
+  DIY_P1_SH: /sh/Ax1800/diy-part1.sh
+  DIY_P2_SH: /sh/Ax1800/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
