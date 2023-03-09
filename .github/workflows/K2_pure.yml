@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: k2p-pure
+name: k2-pure
 
 on:
   repository_dispatch:
